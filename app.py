@@ -16,7 +16,7 @@ def user(name):
 
 @app.route('/admin')
 def admin():
-    return redirect(url_for('home'))
+    return redirect(url_for('user', name='Admin!'))  # Now we when we go to /admin we will redirect to user with the argument "Admin!"
 
 
 if __name__ == '__main__':
