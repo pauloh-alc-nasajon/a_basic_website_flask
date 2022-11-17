@@ -22,11 +22,6 @@ def user():
         return redirect(url_for('login'))
 
 
-@app.route('/admin')
-def admin():
-    return redirect(url_for('user', usr='Admin!'))  # Now we when we go to /admin we will redirect to user with the argument "Admin!"
-
-
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method == 'POST':
