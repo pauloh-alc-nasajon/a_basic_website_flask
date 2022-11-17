@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Defining the home page of our site
 @app.route('/')  # this sets the route to this page
 def home():
-    return render_template('index.html', content={'a': 1, 'b': 2, 'c': 3}, value=111)
+    return render_template('index.html')
 
 
 @app.route('/<name>')
@@ -20,4 +20,4 @@ def admin():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
