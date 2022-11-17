@@ -5,6 +5,10 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>{{content}}</h1>
+    {% if content == 'true' %}
+        <p>True!</p>
+    {% else %}
+        <p>False :(</p>
+    {% endif %}
 </body>
 </html>

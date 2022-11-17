@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Defining the home page of our site
 @app.route('/')  # this sets the route to this page
 def home():
-    return render_template('index.html', content='Testing')
+    return render_template('index.html', content='true')
 
 
 @app.route('/<name>')
