@@ -5,6 +5,7 @@ from datetime import timedelta
 
 app = Flask(__name__)
 app.secret_key = 'hello'
+app.permanent_session_lifetime = timedelta(minutes=1)
 
 
 # Defining the home page of our site
