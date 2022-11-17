@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home page</title>
-</head>
-<body>
-    {% for x in range(10) %}
-        <p>{{x}}</p>
-    {% endfor %}
-    <p>{{content}}</p>
-    <p>{{content['a']}}</p>
-    <p>{{content['b']}}</p>
-    <p>{{content['c']}}</p>
-    <p>{{value}}</p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<h1>Test</h1>
+{% endblock %}
